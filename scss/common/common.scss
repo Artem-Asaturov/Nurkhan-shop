@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+h1,h2,h3,h4,h5,p{
+    font-family: 'Inter', sans-serif;
+}
+.btn{
+    padding: 0px 15px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    background: #3B4650;
+    @extend %flex-center-sb;
+    display: inline-flex;
+    column-gap: 10px;
+    cursor: pointer;
+}

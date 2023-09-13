@@ -1,0 +1,24 @@
+.header{
+    width: 100%;
+    height: 100px;
+    padding: 0 200px;
+    background-color: $header-color;
+    border-bottom: 1.5px solid #3B4650;
+    @extend %flex-center-sb;
+    .btn{
+        box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.25);
+    }
+    .logo{
+        cursor: pointer;
+    }
+    &__user{
+        padding: 0;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+    }
+    &__row1, &__row2{
+        column-gap: 30px;
+        @extend %flex;
+    }
+}
