@@ -9,5 +9,45 @@ main{
             background: url('/img/icons/search.svg') no-repeat;
             background-position: center left 15px;
         }
+        &__result{
+            padding-top: 30px;
+            overflow: scroll;
+            // hidden by default, to display it, you need to set display: grid instead of display: none
+            /* display: grid; */
+            display: none;
+            grid-template: auto / 1fr;
+            width: 650px;
+            height: 400px;
+            position: absolute;
+            border-radius: 0 0 10px 10px;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            margin-top: 42px;
+            background-color: white;
+        }
+
+        .item{
+            margin: 0 30px 30px 30px;
+            .item__icon{
+                width: 70px;
+                height: 70px;
+                margin-right: 10px;
+                border-radius: 20px;
+                background-color: rgb(204, 204, 204);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @extend %flex-center-sb;
+            div{
+                @extend %flex-center-sb;
+                div{
+                    @extend %flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+        }
     }
 }
