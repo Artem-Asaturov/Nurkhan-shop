@@ -116,6 +116,10 @@ h1, h2, h3, h4, h5, p, input, a {
   background-color: white;
 }
 
+.title {
+  text-align: center;
+}
+
 main {
   padding: 50px 360px;
 }
