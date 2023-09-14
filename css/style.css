@@ -93,8 +93,9 @@ legend {
   display: flex;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, input {
   font-family: "Inter", sans-serif;
+  font-weight: 700;
 }
 
 .btn {
@@ -106,6 +107,27 @@ h1, h2, h3, h4, h5, p {
   display: inline-flex;
   column-gap: 10px;
   cursor: pointer;
+}
+
+.btn-white {
+  color: black;
+  border: 1px solid #3B4650;
+  width: 650px;
+  background-color: white;
+}
+
+main {
+  padding: 50px 360px;
+}
+main .search {
+  display: flex;
+  justify-content: center;
+}
+main .search input {
+  text-align: center;
+  padding-left: 10px;
+  background: url("/img/icons/search.svg") no-repeat;
+  background-position: center left 15px;
 }
 
 .header {
