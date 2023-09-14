@@ -10,15 +10,12 @@ main{
             background-position: center left 15px;
         }
         &__result{
-<<<<<<< HEAD
             padding-top: 30px;
             overflow: scroll;
             // hidden by default, to display it, you need to set display: grid instead of display: none
             /* display: grid; */
             display: none;
             grid-template: auto / 1fr;
-=======
->>>>>>> 48610db64eef3e6d64802435cf58a657d1851156
             width: 650px;
             height: 400px;
             position: absolute;
@@ -29,7 +26,6 @@ main{
             margin-top: 42px;
             background-color: white;
         }
-<<<<<<< HEAD
 
         .item{
             margin: 0 30px 30px 30px;
@@ -51,16 +47,6 @@ main{
                     flex-direction: column;
                     align-items: start;
                 }
-=======
-        .item{
-            &__icon{
-                width: 100px;
-            }
-            display: grid;
-            grid-template: 1fr / 1fr 1fr;
-            div{
-                @extend %flex-center-sb;
->>>>>>> 48610db64eef3e6d64802435cf58a657d1851156
             }
         }
     }
