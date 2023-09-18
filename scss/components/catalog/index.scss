@@ -1,0 +1,60 @@
+.menu{
+    
+    &__close{
+        img{
+            cursor: pointer;
+        }
+    }
+    padding: 50px;
+    height: 100%;
+    border-right: 1px solid black;
+    width: 40%;
+    background-color: $main-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &__cards{
+        display: grid;
+        grid-template: auto / 1fr;
+    }
+    &__card{
+        position: relative;
+        &:hover{
+            background-color: $hover-color;
+        }
+        padding: 0 10px;
+        margin-top: 50px;
+        cursor: pointer;
+        height: 70px;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid black;
+    }
+    &__card-icon{
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+    }
+    &__icon{
+        margin-right: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        @extend %flex-center;
+    }
+    .dry{
+        width: 75%;
+    }
+}
+#menu {
+    display: none; /* Начальное состояние - меню скрыто */
+    
+  }
+  
+  #menu.show {
+    display: block; /* Стиль для показа меню */
+  }
+  

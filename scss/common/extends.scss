@@ -11,3 +11,7 @@
 %flex{
     display: flex;
 }
+%main-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
