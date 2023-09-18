@@ -1,9 +1,16 @@
+body{
+    position: relative;
+}
 main{
+    
     padding: 50px 360px;
     .search{
         display: flex;
         justify-content: center;
         input{
+            &:focus{
+                background-color: $hover-color;
+            }
             text-align: center;
             padding-left: 10px;
             background: url('/img/icons/search.svg') no-repeat;
