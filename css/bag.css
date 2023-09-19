@@ -84,25 +84,29 @@ legend {
   display: block;
 }
 
-.menu__icon, footer {
+.menu__icon, footer, main .card__user {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header, .bag__title, .btn {
+.header, .siu, main .card__quantity div, main .card, main .bag__title, .btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header__row1, .header__row2, .bag__clear {
+.header__row1, .header__row2, main .bag__clear {
   display: flex;
 }
 
 h1, h2, h3, h4, h5, p, input, a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
+}
+
+main {
+  min-height: 951px;
 }
 
 .btn {
@@ -135,11 +139,87 @@ h2 {
   font-size: 60px;
 }
 
-.bag__clear {
+main {
+  padding: 100px;
+}
+main .bag__cards {
+  grid-column: 1/6;
+}
+main .bag__goods {
+  display: grid;
+  grid-template: auto/repeat(8, 1fr);
+}
+main .bag__title {
+  margin-bottom: 50px;
+  width: 100%;
+}
+main .bag__title h2 {
+  font-size: 2rem;
+}
+main .bag__clear {
+  cursor: pointer;
   align-items: center;
 }
-.bag__clear p {
-  font-size: 18px;
+main .bag__clear img {
+  height: 30px;
+}
+main .bag__clear p {
+  color: rgba(59, 70, 80, 0.4);
+  font-size: 1rem;
+}
+main .card {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 0 50px;
+  width: 100%;
+  height: 80px;
+}
+main .card__user {
+  width: 50px;
+  height: 50px;
+}
+main .card__user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+main .card__quantity div {
+  padding: 0 20px;
+}
+main .card__quantity div a:visited {
+  color: black;
+}
+main .card__price {
+  display: flex;
+  flex-direction: column;
+}
+main .info {
+  grid-column: 7/9;
+}
+main .info .infosiu {
+  overflow: scroll;
+}
+main .info__adress {
+  margin-bottom: 50px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  border: 1px solid black;
+  height: 150px;
+}
+
+.siu {
+  height: 50px !important;
+}
+
+.btnsiu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header {
