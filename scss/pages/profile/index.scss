@@ -1,0 +1,29 @@
+main{
+    text-align: center;
+    padding-top: 50px;
+    input{
+        width: 35%;
+        height: 60px;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    div{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    .btn{
+        margin-top: 100px;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+    a{
+        margin-top: 20px;
+    }
+    .textx:visited{
+        color: black;
+    }
+}

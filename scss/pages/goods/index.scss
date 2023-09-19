@@ -1,0 +1,40 @@
+main{
+    padding: 50px 300px;
+    text-align: center;
+    .cards{
+        margin-top: 50px;
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        place-items: center;
+        .card{
+            margin-top: 50px;
+            position: relative;
+            height: 300px;
+        width: 200px;
+        border: 1px solid black;
+        border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .photo{
+                display: flex;
+                max-height: 130px;
+                img{
+                    object-fit: contain;
+                }
+                flex-direction: column;
+                p{
+                    margin-top: 20px;
+                }
+            }
+            .btn{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+    }
+}

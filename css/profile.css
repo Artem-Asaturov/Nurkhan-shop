@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.menu__icon, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header, .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__row1, .header__row2 {
+  display: flex;
+}
+
+h1, h2, h3, h4, h5, p, input, a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+main {
+  min-height: 951px;
+}
+
+.btn {
+  padding: 0px 15px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  background: #3B4650;
+  display: inline-flex;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.btn-white {
+  color: black;
+  border: 1px solid #3B4650;
+  width: 650px;
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+}
+
+main {
+  background-color: #F3F7FA;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+main {
+  text-align: center;
+  padding-top: 50px;
+}
+main input {
+  width: 35%;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+main div {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+main .btn {
+  margin-top: 100px;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+main a {
+  margin-top: 20px;
+}
+main .textx:visited {
+  color: black;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  padding: 0 200px;
+  background-color: rgba(156, 184, 209, 0.4);
+  border-bottom: 1.5px solid #3B4650;
+}
+.header .btn {
+  box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.25);
+}
+.header .logo {
+  cursor: pointer;
+}
+.header__user {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+.header__row1, .header__row2 {
+  column-gap: 30px;
+}
+
+footer {
+  background: rgba(156, 184, 209, 0.4);
+  width: 100%;
+  height: 100px;
+}
+
+.menu {
+  padding: 50px;
+  height: 100%;
+  border-right: 1px solid black;
+  width: 40%;
+  background-color: #F3F7FA;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu__close img {
+  cursor: pointer;
+}
+.menu__cards {
+  display: grid;
+  grid-template: auto/1fr;
+}
+.menu__card {
+  position: relative;
+  padding: 0 10px;
+  margin-top: 50px;
+  cursor: pointer;
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+}
+.menu__card:hover {
+  background-color: rgba(230, 230, 230, 0.795);
+}
+.menu__card-icon {
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+}
+.menu__icon {
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+.menu .dry {
+  width: 75%;
+}
+
+#menu {
+  display: none; /* Начальное состояние - меню скрыто */
+}
+
+#menu.show {
+  display: block; /* Стиль для показа меню */
+}
+
+/*# sourceMappingURL=profile.css.map */
