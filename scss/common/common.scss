@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
-h1,h2,h3,h4,h5,p, input, a{
+h1,h2,h3,h4,h5,p, input, a, li{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
 main{
-    min-height: 951px;
+    min-height: calc(100vh - 200px);
 }
 .btn{
     padding: 0px 15px;
